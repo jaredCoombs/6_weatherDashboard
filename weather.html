@@ -7,12 +7,54 @@
   <title>Weather Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <link rel="stylesheet" href="weather.css">
 </head>
 
 <body>
   <h1>Weather Dashboard</h1>
 
+
+  <aside>
+
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">Navbar</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search </button>
+      </form>
+      <div class="todos">
+        <form id="todo-form" method="POST">
+          <label for="todo-text">Add a Todo:</label>
+          <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
+        </form>
+        <p>Todo Count: <span id="todo-count">0</span></p>
+        <ul id="todo-list"></ul>
+      </div>
+
+    </nav>
+
+  </aside>
+
+
+
+  <section>
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-muted">
+        <!---- 2 days ago -->
+      </div>
+    </div>
+
+  </section>
 
   <script src="weather.js"></script>
 </body>
