@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="weather.css">
+  <script src="lib.js"></script>
+  <script src="weather.js"></script>
 </head>
 
 <body>
@@ -17,40 +15,44 @@
 
   <aside>
 
+    <div class="input-group col-md-4">
+      <input class="form-control py-2" type="search" value="search" id="example-search-input">
+      <span class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">
+          <i class="fa fa-search"></i>
+        </button>
+      </span>
+    </div>
 
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search </button>
+
+    <div class="todos">
+      <form id="todo-form" method="POST">
+        <h4>Search for a City:</h4>
+        <label for="todo-text"></label>
+        <input type="text" name="todo-text" id="todo-text" />
       </form>
-      <div class="todos">
-        <form id="todo-form" method="POST">
-          <label for="todo-text">Add a Todo:</label>
-          <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
-        </form>
-        <p>Todo Count: <span id="todo-count">0</span></p>
-        <ul id="todo-list"></ul>
-      </div>
+      <p>Todo Count: <span id="todo-count">0</span></p>
+      <ul id="todo-list" class="list-group"></ul>
+    </div>
 
     </nav>
+
 
   </aside>
 
 
 
   <section>
-    <div class="card text-center">
-      <div class="card-header">
-        Featured
-      </div>
+    <div class="card" style="width: 30rem;">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-      <div class="card-footer text-muted">
-        <!---- 2 days ago -->
+        <h5 class="card-title">City</h5>
+        <img class="icon">
+        <h6 class="card-subtitle mb-2 text-muted"></h6>
+        <p class="weather">
+          Weather</p>
+        <p class="temp">temperature</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
       </div>
     </div>
 

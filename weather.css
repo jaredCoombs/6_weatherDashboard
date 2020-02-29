@@ -4,25 +4,33 @@
    color: white;
    text-align: center;
    line-height: 70px;
+   position: absolute;
+   width: 100%;
+
  }
 
  section {
    width: 70%;
    float: right;
+   margin-top: 0;
+   line-height: 70px;
+   
    
    
  }
 
  aside {
   width: 30%;
+ padding-top: 70px;
+ /*background-color: rgb(233, 232, 232);  */
+ padding-left: 10px;
  }
-
  
  #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
+   
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
@@ -31,9 +39,8 @@
 
 #myUL {
   /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+ /* list-style-type: none;  */
+ 
 }
 
 #myUL li a {
@@ -44,9 +51,20 @@
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
   color: black; /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
 }
 
-#myUL li a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
+ 
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+  .clearfix {
+    overflow: auto;
+  }
+
+ 
+ 
